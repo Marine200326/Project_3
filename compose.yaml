@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  webserver1:
+    build:
+      context: ./webserver1
+      restart: always
+    ports:
+      - "5001:5001"
+    
+
+  webserver2:
+    build:
+      context: ./webserver2 
+      restart: always  
+    ports:
+      - "5002:5002"  
+      
+networks:
+  postgres:
+    driver: bridge
+
+volumes:
+  data:
+
+    
+ 

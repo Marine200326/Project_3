@@ -1,0 +1,29 @@
+<!-- 3 -->
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Zoo Animals Management</title>
+</head>
+<body>
+    <h1>Zoo Animals Information</h1>
+
+
+    <h2>Add New Animal</h2>
+    <form action="/add_animal" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required><br>
+
+        <label for="species">Species:</label>
+        <input type="text" name="species" required><br>
+
+        <label for="habitat">Habitat:</label>
+        <input type="text" name="habitat"><br>
+
+        <label for="age">Age:</label>
+        <input type="number" name="age" required><br>
+
+        <input type="submit" value="Add Animal">
+    </form>
+</body>
+</html>
